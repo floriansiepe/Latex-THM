@@ -1,0 +1,68 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root =  Arbeit.tex
+
+% Zeilenabstand 1,5 Zeilen ---------------------------------------------------------------------
+\onehalfspacing{}
+
+
+% Seitenränder ------------------------------------------------------------------------------------
+\setlength{\topskip}{\ht\strutbox} % behebt Warnung von geometry
+\geometry{paper=a4paper,left=40mm,right=15mm,top=9mm}
+
+
+% Kopf- und Fußzeilen --------------------------------------------------------------------------
+\pagestyle{scrheadings}
+
+% Kopf- und Fußzeile auch auf Kapitelanfangsseiten
+\renewcommand*{\chapterpagestyle}{scrheadings} 
+
+% Schriftform der Kopfzeile
+\renewcommand{\headfont}{\normalfont}
+
+%Überschriftart verbessern
+\addtokomafont{disposition}{\rmfamily}
+
+% Kopfzeile für einseitiges Dokument:
+\ihead{%\small{\textsc{\titel}	\\
+	%\untertitel
+	%\\[2ex]
+	\textit{\headmark}%}
+}
+\chead{}
+\setlength{\headheight}{21mm} % Höhe der Kopfzeile
+% Kopfzeile über den Text hinaus verbreitern
+\setheadwidth[0pt]{textwithmarginpar} 
+\setheadsepline[text]{0.4pt} % Trennlinie unter Kopfzeile
+
+
+%% Kopfzeile für Zweiseitiges Dokument:
+%\ihead{\textit{\leftmark}}
+%\chead{}
+%\ohead{}
+%\lehead{\includegraphics[scale=0.25]{\logo}}
+%\rohead{\includegraphics[scale=0.25]{\logo}}
+%\setheadsepline[text]{0.4pt} % Trennlinie unter Kopfzeile
+
+
+% Fußzeile
+%\ifoot{\copyright\ \autor}
+\cfoot{}
+\ofoot{\pagemark \\[4ex]}
+
+
+% sonstige typographische Einstellungen ---------------------------------------------------
+% erzeugt ein wenig mehr Platz hinter einem Punkt
+\frenchspacing{}
+
+% Schusterjungen und Hurenkinder vermeiden
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+% Quellcode-Ausgabe formatieren
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, breaklines=true}
+\lstset{emph={square}, emphstyle=\color{red}, emph={[2]root,base}, emphstyle={[2]\color{blue}}}
+
+% Fußnoten fortlaufend durchnummerieren
+\counterwithout{footnote}{chapter}
+
