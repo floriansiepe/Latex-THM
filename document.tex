@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{THM}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{ngerman}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{biblatex}
+
+\documentType{Praxisphasenbericht}{SS 2018}
+
+\author{Dein Name}{Deine PLZ}{Dein Ort}{Deine Straße}{Deine Matnr}
+
+\title{Dein Titel}
+
+\companysupervisor{Der Unternehmensbetreuer}
+\unisupervisor{Der Prof}
+\company{Deine Firma}{PLZ der Firma}{Ort der Firma}{Straße der Firma}{resources/logo.png}
+
+\begin{document}
+\maketitle
+
+\pagenumbering{Roman}
+\addcontentsline{toc}{chapter}{\contentsname}
+\tableofcontents
+\newpage
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\newpage
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\newpage
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\chapter{Ein Kapitel}
+\section{Ein Abschnitt}
+\blindtext
+\blindtext
+\blindtext
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\printbibliography
+
+\makeinsurance
+\end{document}

@@ -1,34 +1,61 @@
-#Latex-THM
-*Version 1.0 19.4.2017
+# Latex-THM
 
-*Diese Vorlage basiert auf einer Vorlage von [Moritz Rupp](https://github.com/moritzrupp/LaTeX-Template-For-Scientific-Papers), Vielen Dank für die grandiose Arbeit!*
+This is a a LaTex document class useable for the THM and StudiumPlus.
 
-Diese LaTeX Vorlage ist für generelle wissenschaftliche Arbeiten (speziell Theses, Praxisberichte, Diplomarbeiten, etc.).
+## Getting Started
 
-Hauptmerkmale sind:
+Clone this repo and modify the ![document.tex](./document.tex) file according to your needs. See ![here](./document.pdf) for a preview.
 
-* UTF-8
-* Inhalt kann leicht und verständlich hinzu gefügt werden
-* Vollständig anpassbar
-* Glossar und Abkürzungsverzeichnis mit dem Paket `glossaries`
-* Literaturverzeichnis basierend auf einem angepassten `author-year` Stil
-* Literaturverzeichnis kann in Unterkapitel geteilt werden (z.B. Fachliteratur und Internet Quellen)
-* Deutsche und Englische Version verfügbar
-* Druck- und Digitalversion
-* …und vieles mehr!
+## Custom commands
 
+### Maketitle
 
-###Hinweise:
+Use the standard `\maketitle` command to generate your title page. All your information will be added automatically.
 
+### Makeinsurance
 
-Nutze die Bibliographie-Verwaltung! Es liegt ebenfalls eine Vorlage für eine CD Hülle bei.
+Use `\makeinsurance` for generating a insurance section. All your information will be added automatically.
 
-Die ursprünglichen Vorlagen von Stefan und Felix (in Version 1.2 vom 21.05.2013) liegen im Ordner `Resourcen`.
+### DocumentType
 
-Bei Frage kannst du dich gerne an mich wenden: [flo.siepe@gmail.com](mailto:flo.siepe@gmail.com)
+Set the document type with:
 
-###Licence:
+```latex
+\documentType{Praxisphasenbericht}{SS 2018}
+```
 
-[![Creative Commons Lizenzvertrag](http://i.creativecommons.org/l/by-sa/3.0/de/88x31.png)](http://creativecommons.org/licenses/by-sa/3.0/de/)
+As second argument a short description can be supplied. Use `{}` for empty description
 
-This work respectively the content is plubicised under the [Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland Lizenz](http://creativecommons.org/licenses/by-sa/3.0/de/) ([Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0/)).
+### Author
+
+The standard author command of LaTex is overriden
+
+```latex
+\author{Your Name}{Your zip code}{Your place}{Your address}{Your matnr}
+```
+
+Supply additional information like shown above. Use `{}` for empty description
+
+### Company supervisor
+
+Set your company supervisor with:
+
+```latex
+\companysupervisor{Name}
+```
+
+### University supervisor
+
+Set your unversity supervisor with:
+
+```latex
+unisupervisor{Name}
+```
+
+### Company
+
+Set company information.
+
+```latex
+\company{Company name}{company zip code}{company place}{company address}{logo.png}
+```
