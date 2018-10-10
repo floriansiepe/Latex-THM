@@ -4,7 +4,7 @@ This is a a LaTex document class useable for the THM and StudiumPlus.
 
 ## Getting Started
 
-Clone this repo and modify the ![document.tex](./document.tex) file according to your needs. See ![here](./document.pdf) for a preview.
+Clone this repo and modify the [document.tex](./document.tex) file according to your needs. See [here](./document.pdf) for a preview.
 
 ## Custom commands
 
