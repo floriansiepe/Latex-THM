@@ -4,7 +4,17 @@ This is a a LaTex document class useable for the THM and StudiumPlus.
 
 ## Getting Started
 
+### LaTex Version
+
 Clone this repo and modify the [document.tex](./document.tex) file according to your needs. See [here](./document.pdf) for a preview.
+
+### Pandoc Version
+
+If your not familiar with LaTex or simply prefer writing in markdown but you like these beautiful looking LaTex pdf's thats completly fine. Use [document.md](./document.md) as a start. If you are ready run
+```bash
+pandoc document.md -o document.pdf --template THM.latex --top-level-division=chapter
+```
+to compile your markdown to pdf.
 
 ## Custom commands
 
