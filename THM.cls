@@ -192,3 +192,19 @@
 	
 }
 
+\newcommand{\lockMark}{
+	\chapter*{Sperrvermerk}
+	\thispagestyle{empty}
+	Der vorliegende Praxisphasenbericht beinhaltet interne vertrauliche Informationen
+	der \@companyName. Die Weitergabe des Inhaltes der Arbeit
+	und eventuell beiliegender Zeichnungen und Daten im Gesamten oder in Teilen ist
+	grundsätzlich untersagt. Es dürfen keinerlei Kopien oder Abschriften - auch in digitaler
+	Form - gefertigt werden. Ausnahmen bedürfen der schriftlichen Genehmigung der
+	\@companyName.
+	\newpage
+}
+
+\newcommand{\commonAcronyms}{
+	Allgemeine Abkürzungen, wie „z.B.“, „etc.“, „usw.“ oder gängige Abkürzungen in Fußnoten, wie z.B. „vgl.“, usw. wurden explizit nicht im Abkürzungsverzeichnis aufgeführt.
+}
+

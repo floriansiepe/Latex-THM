@@ -19,11 +19,13 @@
 \company{Deine Firma}{PLZ der Firma}{Ort der Firma}{Straße der Firma}{resources/logo.png}
 
 \begin{document}
-\maketitle
 
+\maketitle
+\lockMark
 \pagenumbering{Roman}
 \addcontentsline{toc}{chapter}{\contentsname}
 \tableofcontents
+\setcounter{page}{1}
 \newpage
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
@@ -31,8 +33,12 @@
 \addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
 \newpage
-\setcounter{page}{0}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+\chapter*{Abkürzungsverzeichnis}
+\commonAcronyms
+\newpage
 \pagenumbering{arabic}
+\setcounter{page}{1}
 
 \chapter{Ein Kapitel}
 \section{Ein Abschnitt}
@@ -49,7 +55,11 @@
 
 \blindtext
 
-\printbibliography
+\printbibliography[title=Literaturverzeichnis]
 
+
+\pagenumbering{Roman}
+\setcounter{page}{5}
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
 \makeinsurance
 \end{document}

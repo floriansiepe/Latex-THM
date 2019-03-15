@@ -37,6 +37,8 @@ $for(include-before)$
 $include-before$
 $endfor$
 
+\lockMark
+
 \pagenumbering{Roman}
 $if(toc)$
 $if(toc-title)$

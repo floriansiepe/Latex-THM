@@ -69,3 +69,19 @@ Set company information.
 ```latex
 \company{Company name}{company zip code}{company place}{company address}{logo.png}
 ```
+
+### Lock mark
+
+Adds a generic lock mark to your document.
+
+```latex
+\lockMark
+```
+
+### Common acronyms
+
+Adds a statement about the usage of common known acronyms.
+
+```latex
+\commonAcronyms
+```
