@@ -7,6 +7,7 @@
 \RequirePackage{setspace}
 \RequirePackage{geometry}
 \RequirePackage{fancyhdr}
+\RequirePackage{xkeyval}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessOptions
 
@@ -83,6 +84,14 @@
   \def\@authorStreet{#4}
   \def\@authorMat{#5}
 }
+
+\def\@signature{}
+\newcommand{\signature}[3]{
+	\def\@signature{#1}
+	\def\@signature@top{#2}
+	\def\@signature@left{#3}
+}
+
 
 \newcommand{\logoTHM}{resources/thm.jpg}
 \newcommand{\logoSTP}{resources/sp.jpg}
@@ -185,7 +194,18 @@
 	
 	\vspace{6ex}
 	
-	
+	\@ifundefined{\@signature}
+	{%
+		% \foo not defined
+	}
+	{%
+		\hspace{\@signature@left}
+
+		\includegraphics[width=5cm]{\@signature}
+		
+		\vspace{\@signature@top}
+	}%
+
 	\rule[-0.2cm]{5cm}{0.5pt}
 	
 	\textsc{\@author} 

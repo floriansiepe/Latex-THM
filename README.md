@@ -78,6 +78,14 @@ Adds a generic lock mark to your document.
 \lockMark
 ```
 
+### Signature
+
+If provided it will add a signature to the lock mark. Can be any image or pdf/eps file. Hint: Create your signature on a touchscreen device, export it to pdf.
+
+```latex
+\signature{yourSignatureFile}{paddingTop}{paddingLeft}
+```
+
 ### Common acronyms
 
 Adds a statement about the usage of common known acronyms.
