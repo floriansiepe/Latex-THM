@@ -16,6 +16,28 @@ pandoc document.md -o document.pdf --template THM.latex --top-level-division=cha
 ```
 to compile your markdown to pdf.
 
+## Lyx Version
+
+To use Lyx as a frontend for your document, you have to complete these steps:
+
+1. Obviously install Latex and Lyx
+
+1. Copy `THM.latex` into `.lyx/layouts`.
+
+   `cp THM.latex ~/.lyx/layouts`
+
+1. Create a `textmf` directory in your current home
+
+    `mkdir -p ~/textmf/tex/latex`
+
+1. Copy `THM.cls` and the resource folder to `~/textmf/tex/latex`
+
+    `cp resources ~/textmf/tex/latex`
+
+    `cp THM.cls ~/textmf/tex/latex`
+
+1. Update Lyx: Tools -> Reconfigure and restart Lyx
+
 ## Custom commands
 
 ### Maketitle
