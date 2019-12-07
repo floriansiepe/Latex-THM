@@ -8,6 +8,8 @@
 \RequirePackage{geometry}
 \RequirePackage{fancyhdr}
 \RequirePackage{xkeyval}
+\RequirePackage[pdftex,dvipsnames]{xcolor}
+\RequirePackage{xargs}
 \RequirePackage[colorinlistoftodos,prependcaption]{todonotes}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessOptions
@@ -15,7 +17,7 @@
 \LoadClass{report}
 
 \onehalfspacing{}
-\geometry{paper=a4paper,left=40mm,right=15mm,top=20mm,bottom=20mm}
+%\geometry{paper=a4paper,left=40mm,right=15mm,top=20mm,bottom=20mm}
 
 % Set header
 \pagestyle{fancy}
@@ -43,7 +45,7 @@
 }}
 
 % Define custom commands
-
+\setlength{\marginparwidth}{3cm}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
