@@ -115,3 +115,16 @@ Adds a statement about the usage of common known acronyms.
 ```latex
 \commonAcronyms
 ```
+
+### Notes
+
+For adding side notes the `todonotes` package is used. For convenience, there are short cuts for some different types of notes. Any arguments in `[]` will be passed to the underlying `\todo` command. 
+
+```latex
+\unsure{Is this correct?}
+\change{Change this!}
+\info{This can help me in chapter seven!}
+\improvement{The following section needs to be rewritten!}
+
+\unsure[inline]{An inline todo}
+```

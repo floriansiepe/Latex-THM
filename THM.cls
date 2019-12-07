@@ -8,6 +8,7 @@
 \RequirePackage{geometry}
 \RequirePackage{fancyhdr}
 \RequirePackage{xkeyval}
+\RequirePackage[colorinlistoftodos,prependcaption]{todonotes}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessOptions
 
@@ -40,6 +41,13 @@
 		\Large \bfseries {\huge\thechapter\hskip 20\p@#1}\par\nobreak
 		\vskip 20\p@
 }}
+
+% Define custom commands
+
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
 
 \def\@documentType{Praxisphasenbericht}
 \def\@documentTypeDescription{}
