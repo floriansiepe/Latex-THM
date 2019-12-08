@@ -6,7 +6,7 @@ This is a a LaTex document class useable for the THM and StudiumPlus.
 
 ### LaTex Version
 
-Clone this repo and modify the [document.tex](./document.tex) file according to your needs. See [here](./document.pdf) for a preview.
+Clone this repo and modify the [document.tex](./document.tex) file according to your needs. See the [release page](https://github.com/Flo9818/Latex-THM/releases) for a preview.
 
 ### Pandoc Version
 
@@ -22,21 +22,21 @@ To use Lyx as a frontend for your document, you have to complete these steps:
 
 1. Obviously install Latex and Lyx
 
-1. Copy `THM.latex` into `.lyx/layouts`.
+2. Copy `THM.latex` into `.lyx/layouts`.
 
    `cp THM.latex ~/.lyx/layouts`
 
-1. Create a `textmf` directory in your current home
+3. Create a `textmf` directory in your current home
 
     `mkdir -p ~/textmf/tex/latex`
 
-1. Copy `THM.cls` and the resource folder to `~/textmf/tex/latex`
+4. Copy `THM.cls` and the resource folder to `~/textmf/tex/latex`
 
     `cp resources ~/textmf/tex/latex`
 
     `cp THM.cls ~/textmf/tex/latex`
 
-1. Update Lyx: Tools -> Reconfigure and restart Lyx
+5. Update Lyx: Tools -> Reconfigure and restart Lyx
 
 ## Custom commands
 
