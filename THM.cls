@@ -225,7 +225,7 @@
 \newcommand{\lockMark}{
 	\chapter*{Sperrvermerk}
 	\thispagestyle{empty}
-	Der vorliegende Praxisphasenbericht beinhaltet interne vertrauliche Informationen
+	Der vorliegende \@documentType\ beinhaltet interne vertrauliche Informationen
 	der \@companyName. Die Weitergabe des Inhaltes der Arbeit
 	und eventuell beiliegender Zeichnungen und Daten im Gesamten oder in Teilen ist
 	grundsätzlich untersagt. Es dürfen keinerlei Kopien oder Abschriften - auch in digitaler
